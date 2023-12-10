@@ -43,4 +43,26 @@ class Calculaator {
     }
     return this._a / this._b;
   }
+
+  // static 메서드
+  static addStatic(a: number, b: number): number {
+    return a + b;
+  }
+
+  static subtractStatic(a: number, b: number): number {
+    return a - b;
+  }
+
+  static multiplyStatic(a: number, b: number): number {
+    return a * b;
+  }
+
+  static divideStatic(a: number, b: number): number {
+    if (b === 0 ) {
+      throw new Error("0으로 나눌 수 없습니다.")
+    }
+    return a + b;
+  }
 }
+
+
