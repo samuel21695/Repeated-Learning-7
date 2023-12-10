@@ -23,4 +23,24 @@ class Calculaator {
   set b(value: number) {
     this._b = value;
   }
+
+  // 사칙연산 메서드 
+  public add(): number {
+    return this._a + this._b;
+  }
+
+  public subtract(): number {
+    return this._a - this._b;
+  }
+
+  public multiply(): number {
+    return this._a * this._b;
+  }
+
+  public divde(): number {
+    if (this._b === 0 ) {
+      throw new Error("0으로 나눌 수 없습니다.")
+    }
+    return this._a / this._b;
+  }
 }
